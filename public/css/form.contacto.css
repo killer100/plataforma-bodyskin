@@ -1,0 +1,116 @@
+
+
+
+
+#form-contacto{
+    background-image:url('/bodyskin/public/img/img-formulario-contacto.jpg');background-size: cover; background-repeat: no-repeat;
+    max-width:1200px;
+}
+
+@media (max-width: 767px) {
+    #form-contacto{
+        background-image:none;
+        background-color: transparent;
+    }
+    .container-fluid, .row {
+        padding:0px;
+    }
+    #contactForm{
+        margin-top: 0px!important;
+        margin-bottom: 0px!important;
+    }
+}
+@media (min-width:1200px) {
+    .container-fluid {
+        margin-right: auto;
+        margin-left: auto;
+        min-width: 1170px; /* or 950px */
+        min-height: 580px;
+    }
+}
+
+#contactForm{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+#contactForm .error{
+    color: red;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+#contactForm input, #contactForm select {
+    width: 100%;
+    max-width: 800px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    color: #111;
+    border: none!important;
+    border-bottom: 1px solid #e9e7e7!important;
+    border-radius: 1px;
+    background-color: #fff;
+    line-height: 50px;
+    font-size: 14px;
+    box-shadow: none!important;
+    font-style: normal!important;
+}
+
+#contactForm  .required-notice {
+    display: block;
+    clear: both;
+    margin: 10px 0;
+    text-align: right;
+    letter-spacing: 0;
+    color: #900;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#contactForm  .btn[type=submit] {
+    margin: 0;
+    padding: 15px 0;
+    border-radius: 1px;
+    color: #fff;
+    background-color: #ff6310;
+    font-size: 1.375rem;
+    font-weight: 600;
+    -webkit-transition: all .3s ease-out;
+}
+
+#contactForm .btn[type=submit]:hover, 
+#contactForm .btn[type=submit]:active, 
+#contactForm .btn[type=submit]:focus {
+    outline: 0;
+    background-color: #df4a1c;
+}
+
+#contactForm .btn[type=submit]:after{
+    content: normal;
+}
+
+button.fancybox-close-small{
+    background-color: transparent!important;
+}
+
+.loadingoverlay{
+    z-index: 99995!important;
+}
+.popup-error, .popup-error-validation{
+    color: rgb(206, 39, 39);
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.popup-success{
+    color: rgba(223, 73, 28, 0.72);
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    font-size: 12px;
+}
